@@ -16,12 +16,21 @@
             window.onload = function () {
                 // Begin Swagger UI call region
                 const ui = SwaggerUIBundle({
-                    // urls: [
-                    //     { url: "http://petstore.swagger.io/v2/swagger.json", name: "Pet Store" }, 
-                    //     { url: 'http://rest-master.aws.chdev.nuix.com:8080/nuix-restful-service/svc/openapi-docs', name: 'Nuix' }
-                    // ],
-                    //url: "openapi/openapi.yaml", //Location of Open API spec in the repo
-                    configUrl: 'https://jmowbraynuix.github.io/swagger-config.json'
+                    // External configuration with links to API versions
+                    configUrl: 'https://jmowbraynuix.github.io/swagger-config.json',
+                    dom_id: '#swagger-ui',
+                    deepLinking: true,
+                    presets: [
+                        SwaggerUIBundle.presets.apis,
+                        SwaggerUIStandalonePreset
+                    ],
+                    plugins: [
+                        SwaggerUIBundle.plugins.DownloadUrl,
+                    ],
+                    layout: 'StandaloneLayout',
+                    docExpansion: 'none',
+                    validatorUrl: 'none',
+                    tryItOutEnabled: false,
                 })
                 window.ui = ui
             }
