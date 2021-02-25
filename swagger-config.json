@@ -1,0 +1,19 @@
+{
+    "urls": [
+        {"url": "https://jmowbraynuix.github.io/openapi/openapi.yaml", "name": "V1"}, 
+        {"url": "https://jmowbraynuix.github.io/openapi/openapi2.yaml", "name": "V2"}
+    ],
+    "dom_id": "#swagger-ui",
+    "deepLinking": true,
+    "presets": [
+        "SwaggerUIBundle.presets.apis",
+        "SwaggerUIStandalonePreset"
+    ],
+    "plugins": [
+        "SwaggerUIBundle.plugins.DownloadUrl"
+    ],
+    "layout": "StandaloneLayout",
+    "docExpansion": "none",
+    "validatorUrl": "none",
+    "tryItOutEnabled": false
+}

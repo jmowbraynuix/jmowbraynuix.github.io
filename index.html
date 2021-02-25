@@ -8,7 +8,7 @@
         <!-- <script src="https://unpkg.com/browse/swagger-ui-dist@3.43.0/swagger-ui-es-bundle-core.js"></script> -->
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.43.0/swagger-ui.css"/>
         <link rel="shortcut icon" href="Nuix_Favicon.ico">
-        <title>REST Docs</title>
+        <title>REST API Docs</title>
     </head>
     <body>
         <div id="swagger-ui"></div> <!-- Div to hold the UI component -->
@@ -20,22 +20,8 @@
                     //     { url: "http://petstore.swagger.io/v2/swagger.json", name: "Pet Store" }, 
                     //     { url: 'http://rest-master.aws.chdev.nuix.com:8080/nuix-restful-service/svc/openapi-docs', name: 'Nuix' }
                     // ],
-                    //url: 'http://rest-master.aws.chdev.nuix.com:8080/nuix-restful-service/svc/openapi-docs',
                     //url: "openapi/openapi.yaml", //Location of Open API spec in the repo
-                    urls: [{url: 'https://jmowbraynuix.github.io/openapi/openapi.yaml', name: 'V1'}, {url: 'https://jmowbraynuix.github.io/openapi/openapi2.yaml', name: 'V2'}],
-                    dom_id: '#swagger-ui',
-                    deepLinking: true,
-                    presets: [
-                        SwaggerUIBundle.presets.apis,
-                        SwaggerUIStandalonePreset
-                    ],
-                    plugins: [
-                        SwaggerUIBundle.plugins.DownloadUrl,
-                    ],
-                    layout: 'StandaloneLayout',
-                    docExpansion: 'none',
-                    validatorUrl: 'none',
-                    tryItOutEnabled: false,
+                    configUrl: 'https://jmowbraynuix.github.io/swagger-config.json'
                 })
                 window.ui = ui
             }
