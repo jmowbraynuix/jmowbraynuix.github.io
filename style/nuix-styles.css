@@ -1,0 +1,19 @@
+.topbar-wrapper img {
+    content:url('../images/nuix-white-web-logo-55_0.png');
+}
+
+.swagger-ui .topbar {
+    background-color: #006dcc;
+}
+
+.swagger-ui .topbar .download-url-wrapper .select-label select {
+    border-color: #415968;
+}
+
+/* .swagger-ui .topbar {
+    background-color: #415968;
+}
+
+.swagger-ui .topbar .download-url-wrapper .select-label select {
+    border-color: #006dcc;
+} */
