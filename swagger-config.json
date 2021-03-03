@@ -1,16 +1,16 @@
 {
   "urls": [
     {
-      "url": "https://jmowbraynuix.github.io/openapi/openapi.yaml",
-      "name": "1.0.0"
-    },
-    {
-      "url": "https://jmowbraynuix.github.io/openapi/openapi2.yaml",
-      "name": "1.0.0"
-    },
-    {
       "url": "https://jmowbraynuix.github.io/openapi/openapi_9.0.0.yaml",
       "name": "9.0.0"
+    },
+    {
+        "url": "https://jmowbraynuix.github.io/openapi/openapi2.yaml",
+        "name": "2.0.0"
+    },
+    {
+        "url": "https://jmowbraynuix.github.io/openapi/openapi.yaml",
+        "name": "1.0.0"
     }
   ]
 }
